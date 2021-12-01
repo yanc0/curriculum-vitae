@@ -29,7 +29,7 @@ jobs:
       run: |-
         ls
         gsutil -m -h "Cache-Control:no-cache,max-age=0" \
-          cp -a public-read -r \
+          cp -r \
           *.html statics/ \
           $BUCKET_NAME
         gsutil web set -m index.html $BUCKET_NAME
