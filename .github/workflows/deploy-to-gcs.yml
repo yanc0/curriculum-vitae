@@ -1,0 +1,36 @@
+name: Deploy to Google Cloud Storage
+
+on:
+  push:
+    branches:
+    - master
+    - develop
+
+env:
+  PROJECT_ID: ${{ secrets.PROJECT_ID }}
+  BUCKET_NAME: "gs://yann.work"
+
+jobs:
+  deploy:
+    name: Setup, Build, and Deploy
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    # Setup gcloud CLI
+    - uses: google-github-actions/setup-gcloud@master
+      with:
+        service_account_key: ${{ secrets.SA_KEY }}
+        project_id: ${{ secrets.PROJECT_ID }}
+    
+    - name: Deploy
+      run: |-
+        ls
+        gsutil -m -h "Cache-Control:no-cache,max-age=0" \
+          cp -a public-read -r \
+          *.html statics/ \
+          $BUCKET_NAME
+        gsutil web set -m index.html $BUCKET_NAME
+        gsutil web set -e 404.html $BUCKET_NAME

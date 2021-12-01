@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+<!--
+    If you look at the source code of this page
+    you will see that i'm not a frontend developer, at all :)
+-->
+
+<head>
+    <meta charset="utf-8">
+    <title>Yann Coleu - Cloud Architect, SRE</title>
+    <meta name="description" content="">
+    <meta name="author" content="yanc0">
+    <link rel="stylesheet" href="statics/css/main.css?v=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="statics/images/logo.jpg" type="image/x-icon" />
+</head>
+
+<body>
+    <div class="flags-icons">
+        <a class="flag" href="https://yann.work/"><img src="statics/images/fr.svg" /></a>
+        <a class="flag" href="https://yann.work/index-en.html"><img src="statics/images/gb.svg" /></a>
+    </div>
+    <header>
+        <img src="statics/images/logo.jpg" />
+        <h1>Yann Coleu</h1>
+        <h2>Consultant, Architecte Cloud, SRE</h2>
+        <!--<div class="job-search-status"><span class="actively-looking">Disponible</span>-->
+        <div class="job-search-status"><span class="not-looking">En poste</span>
+        </div>
+        <nav>
+            <a href="https://github.com/yanc0">Github</a>
+            <a href="https://twitter.com/YannColeu">Twitter</a>
+            <a href="https://stackoverflow.com/story/yann-coleu">Stackoverflow</a>
+            <a href="mailto:contact@yann.work">Email</a>
+        </nav>
+    </header>
+    <h1 class="head-title">À propos</h1>
+    <article id="yann">
+        <div class="article-content">
+
+            <p>Diplômé en master Systèmes, réseaux et sécurité, je suis passionné par les
+                architectures cloud, les applications scalables et résilientes.
+            </p>
+
+            <p>J'ai été leader technique chez SKALE-5 qui s'occupe de la migration et l'infogérance
+                d'applications sur GCP et AWS. J'y ai notamment développé quelques outils et applications
+                en Go depuis 2015. Mon mantra à toujours été de combattre la complexité au profit de la
+                simplicité.
+            </p>
+
+            <p>Sur ce CV, vous y trouverez quelques projets sur lesquels j'ai pu travailler mais aussi
+                quelques exemples d'entreprises que j'ai pu migrer moi et mon équipe sur un datacentre
+                nouvelle génération.
+            </p>
+        </div>
+    </article>
+    <h1 class="head-title">Compétences Techniques</h1>
+    <article id="kubernetes">
+        <div class="article-head">
+            <div class="article-image-wrap">
+                <img class="article-image" src="statics/images/kubernetes.png" />
+            </div>
+            <div class="article-title-wrap">
+                <h2 class="article-title">Kubernetes</h2>
+                <div class="article-when">Jan. 2017 - maintenant</div>
+            </div>
+        </div>
+        <div class="article-content">
+
+            Depuis début de 2017, je maintenais des infrastructures basées sur Kubernetes,
+            plus particulièrement dans sa version managée sur GCP. Pour beaucoup de raisons,
+            conteneuriser des applications et rédiger des manifestes Kubernetes font parti des
+            meilleures expériences que j'ai pu vivre techniquement. Je connais presque tous les composants,
+            quand il faut les utiliser et surtout quand il ne faut pas. Ma vie professionnelle est
+            devenue beaucoup plus confortable et les systèmes en production beaucoup plus stables.
+
+            Il est vrai que j'ai pu faire beaucoup de choses avec cet orchestrateur:
+
+            <ul>
+                <li>Gérer toute sorte d'application allant du monolithe aux micro-services</li>
+                <li>Des environnements éphémères</li>
+                <li><a href="https://github.com/yanc0/kubernetes-updown-io-controller">Monitoring avec les CRD</a>
+                </li>
+                <li>Des environnements de demo ou test avec un <code>kubectl apply</code></li>
+                <li>etc.</li>
+            </ul>
+
+            Je me suis aussi essayé à la <a
+                href="https://medium.com/@yann.coleu/kubernetes-options-de-scheduling-46158e319f57"> vulgarisation de
+                concepts assez technique</a>.
+        </div>
+    </article>
+    <article id="gcp">
+        <div class="article-head">
+
+            <div class="article-image-wrap">
+                <img class="article-image" src="statics/images/gcp.png" />
+            </div>
+            <div class="article-title-wrap">
+                <h2 class="article-title">Google Cloud Plateform</h2>
+                <div class="article-when">2015 - Maintenant </div>
+            </div>
+        </div>
+        <div class="article-content">
+            Pour beaucoup de raisons, Google Cloud Plateform est un choix judicieux pour
+            héberger ses applications. Même si avant 2016, j'ai eu plus l'habitude d'installer
+            et gérer des systèmes sur AWS, la première fois sur GCP a été pour moi une expérience
+            incroyable et le produit est meilleur de jour en jour. J'ai aussi passé la
+            certification <a href="https://cloud.google.com/certification/cloud-architect">Professional
+                Cloud Architect</a> avec succès.
+        </div>
+    </article>
+    <article id="golang">
+        <div class="article-head">
+
+            <div class="article-image-wrap">
+                <img class="article-image" src="statics/images/golang.png" />
+            </div>
+            <div class="article-title-wrap">
+                <h2 class="article-title">Golang</h2>
+                <div class="article-when">2016 - Maintenant</div>
+            </div>
+        </div>
+        <div class="article-content">
+
+            Avant de me diriger vers les infrastructures Cloud, j'ai étudié
+            la programmation en DUT Génie Logiciel. Comme tout le monde, j'y
+            ai appris le C, le Java et le PHP. Quand j'ai découvert le Go en 2015,
+            je l'ai trouvé très intéressant et surtout extrêmement adapté à mes besoins
+            sur les systèmes Linux. J'ai développé beaucoup d'API et logiciels, la plupart
+            d'entre-eux sont hébergé sur Github. Vous pouvez en apercevoir quelques uns
+            dans la section <a href="#projects">"Projets"</a>.
+        </div>
+    </article>
+    <article id="Hashistack">
+        <div class="article-head">
+
+            <div class="article-image-wrap">
+                <img class="article-image" src="statics/images/hashicorp.png" />
+            </div>
+            <div class="article-title-wrap">
+                <h2 class="article-title">Hashistack</h2>
+                <div class="article-when">2016 - Maintenant</div>
+
+            </div>
+        </div>
+        <div class="article-content">
+
+            La culture DevOps implique de l'automatisation dès que celle-ci est possible.
+            Quand il s'agit d'automatiser une plateforme entière, on rencontre assez
+            rapidement et depuis longtemps <a href="https://terraform.io">terraform</a>,
+            l'outil d'infrastructure as code par excellence. J'ai écrit beaucoup de
+            fichiers HCL et je suis très à l'aise pour gérer une infrastructure avec
+            cet outil.
+
+            Quand je ne peux ni utiliser Docker ni Kubernetes pour une application
+            particulière, j'aime aller vers les autres outils d'Hashicorp comme Packer,
+            Vault ou encore Consul.
+        </div>
+    </article>
+
+    <h1 class="head-title">Poste actuel</h1>
+    <article id="skale-5">
+        <div class="article-head">
+            <div class="article-image-wrap">
+                <img class="article-image" src="statics/images/skale-5.png" />
+                <div class="article-when">2015 - now</div>
+            </div>
+        </div>
+        <div class="article-content">
+            ...
+        </div>
+    </article>
+
+    <h1 class="head-title">Quelques projets phares</h1>
+    <article>
+        <div class="article-head">
+
+            <div class="article-image-wrap">
+                <img class="article-image" src="statics/images/lequipe.svg" />
+                <div class="article-when">Juin 2018 - Décembre 2018</div>
+
+            </div>
+        </div>
+        <div class="article-content">
+            <a href="https://www.lequipe.fr">L'équipe</a> est le media sportif le plus consulté en France sur internet.
+            Nous avons migré tout le trafic en décembre 2018 sur GCP après 6 mois de projet.
+
+            Le site génère 1,5 milliard de pages vues par mois et ils étaient anciennement
+            hébergés sur un datacentre classique et très verrouillé.
+
+            Maintenant que leurs applications sont gérées par SKALE-5 et GCP, l'amélioration
+            de leur produits est beaucoup plus facile.
+        </div>
+    </article>
+    <article>
+        <div class="article-head">
+
+            <div class="article-image-wrap">
+                <img class="article-image" src="statics/images/campings.png" />
+                <div class="article-when">2018 - 2019</div>
+
+            </div>
+        </div>
+        <div class="article-content">
+
+            <a href="https://www.campings.com">Campings.com</a> est le numéro 1
+            de la réservation de campings sur internet. L'année 2018 a été pour
+            eux un tournant avec une campagne de financement de 10 millions d'euros ainsi
+            qu'une migration sur GCP avec SKALE-5. C'était un projet passionnant
+            avec des enjeux techniques très poussés. Maintenant, ils font tourner
+            plus de 800 conteneurs en production sur Kubernetes avec une grande
+            pluralité de technologie en coulisse.
+        </div>
+    </article>
+
+    <article>
+        <div class="article-head">
+
+            <div class="article-image-wrap">
+                <img class="article-image" src="statics/images/prestashop.png" />
+                <div class="article-when">2017</div>
+            </div>
+        </div>
+        <div class="article-content">
+            Prestashop est historiquement l'éditeur de la plateforme opensource 
+            E-Commerce éponyme. Avec l'avènement des logiciels en SaaS, l'entreprise 
+            a décidé de prendre le train en marche en développant leur solution de 
+            boutique à la demande basée évidemment sur leur logiciel. Nous les avons 
+            accompagnés jusqu'à la phase de lancement et une bonne partie de la phase 
+            d'infogérance. Le projet était très ambitieux techniquement et c'est pour
+            cette raison que SKALE-5 avec l'aide de Google a été choisie pour développer 
+            le socle de leur produit.
+        </div>
+    </article>
+
+    <h1 class="head-title" id="projects">Projets Personnels</h1>
+    <article>
+        <div class="article-head">
+
+            <div class="article-image-wrap">
+                <img class="article-image" src="statics/images/blazing-link.svg" />
+            </div>
+            <div class="article-title-wrap">
+                <h2 class="article-title">Blazing.link</h2>
+                <div class="article-when">2019 - Maintenant</div>
+
+            </div>
+        </div>
+        <div class="article-content">
+
+            <a href="https://blazing.link">Blazing.link</a> est un aggrégateur de liens 
+            en rapport avec l'univers DevOps. C'est un robot qui va chercher sur plusieurs 
+            réseaux sociaux comme Reddit ou simplement des flux RSS des articles que chaque 
+            acteur du milieu doit voir ou lire. C'est encore un produit assez jeune mais 
+            j'ai beaucoup d'idée pour l'améliorer et en faire un hackernews spécialisé 
+            dans le SRE/Infrastructure As Code. Je pense que ce petit site reflète ma 
+            personnalité professionnelle : Simplicité Rapidité Légèreté Go :) Le code 
+            n'est pas encore publique.
+        </div>
+    </article>
+    <article>
+        <div class="article-head">
+
+            <div class="article-image-wrap">
+                <img class="article-image" src="statics/images/beeping.png" />
+            </div>
+            <div class="article-title-wrap">
+                <h2 class="article-title">Beeping</h2>
+                <div class="article-when">2016</div>
+
+            </div>
+        </div>
+        <div class="article-content">
+
+            Avant l'avènement de <a href="https://prometheus.io">Prometheus</a>, notre
+            système de monitoring manquait d'un service de surveillance HTTP(s) simple mais
+            distribué.
+
+            C'est pour cela que j'ai développé <a href="https://github.com/yanc0/beeping">Beeping</a>.
+
+            Ce logiciel a reçu un très bon accueil de la communauté. Il a été mon
+            premier vrai projet opensource et j'ai été extrêmement satisfait de merger des
+            pull requests venant du monde entier.
+
+            Malheureusement, je ne maintiens plus activement cet outil, le nouveau prometheus
+            blackbox-exporter est beaucoup plus adapté de nos jours.
+        </div>
+    </article>
+    <article>
+        <div class="article-head">
+
+            <div class="article-image-wrap">
+                <img class="article-image" src="statics/images/greedee.png" />
+            </div>
+            <div class="article-title-wrap">
+                <h2 class="article-title">Greedee</h2>
+                <div class="article-when">2017</div>
+
+            </div>
+        </div>
+        <div class="article-content">
+
+            <a href="https://github.com/yanc0/greedee">Greedee</a> a été conçu pour 
+            la performance et la modularité. C'est un petit serveur HTTP qui reçoit,
+            transforme et stocke des métriques dans une base de données temporelle (Graphite). 
+            Il tourne encore en production pour les systèmes legacy qui sont encore basés 
+            sur Collectd. J'ai appris beaucoup de choses en Go grâce à ce projet mais 
+            personne n'utilisera cet outil car il est bien trop spécialisé pour des besoins 
+            dont nous ne sommes pas tellement fiers :)
+        </div>
+    </article>
+
+    <h1 class="head-title" id="hobbies">Passions</h1>
+    <article>
+        <div class="article-head">
+
+            <div class="article-image-wrap">
+                <img class="article-image" src="statics/images/bateau.png" />
+            </div>
+            <div class="article-title-wrap">
+                <h2 class="article-title">La Voile</h2>
+                <div class="article-when">Depuis longtemps et pour toujours</div>
+
+            </div>
+        </div>
+        <div class="article-content">
+
+            J'ai acheté un voilier à restaurer pendant l'été 2019. Il est actuellement en Bretagne
+            au port de Trébeurden (22). C'est un rêve que j'ai depuis très longtemps qui est maintenant
+            une réalité.
+
+            Le bateau en question est un <a href="http://amd.alio.free.fr/ukecumedemerFrame-1.htm">"Écume de Mer"</a>
+            réputé pour son côté robuste et très marin. <br />
+
+            <img class="tanuki" src="statics/images/tanuki.jpg" />
+        </div>
+    </article>
+    <div class="footer">
+        Ce site est hébergé sur <a href="https://cloud.google.com/storage/">Google Cloud Storage</a> et <a
+            href="https://www.cloudflare.com/cdn/">Cloudflare</a>.
+    </div>
+</body>
+
+</html>
