@@ -9,7 +9,7 @@ body {
 h1,
 h2,
 strong {
-  color: #333;
+  color: #003555;
 }
 
 a {
@@ -23,12 +23,12 @@ body {
 code,
 pre {
   background: #f5f7f9;
-  border-bottom: 1px solid #d8dee9;
+  border-bottom: 0.1em solid #d8dee9;
   color: #5b5d63;
 }
 
 pre {
-  border-left: 2px solid #69c;
+  border-left: 0.1em solid #69c;
 }
 
 header {
@@ -48,7 +48,6 @@ header .description {
 }
 
 header h1 {
-  color: #003555;
   margin: 0em;
 }
 
@@ -57,7 +56,6 @@ header h2 {
   font-size: large;
   padding-left: 0.2em;
   border-left: 0.05em dashed gray;
-  color: #394043;
 }
 
 header ul {
@@ -67,9 +65,9 @@ header ul {
 .job-search-status {
   position: absolute;
   bottom: 0em;
-  color: rgb(255, 255, 255);
+  color: white;
   font-weight: bold;
-  border-radius: 2px;
+  border-radius: 0.1em;
   padding: 0.25em;
 }
 
@@ -95,15 +93,15 @@ nav a:hover {
 
 .article-head {
   position: relative;
-  padding-top: 1em;
-  padding-left: 1em;
-  padding-right: 1em;
 }
 
 article {
+  padding-top: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
   margin-bottom: 1em;
   line-height: 1.5;
-  border: 1px solid #eceeee;
+  border: 0.1em solid #eceeee;
   background-color: #fcfcfc;
 }
 
@@ -121,7 +119,7 @@ article {
 }
 
 .article-title {
-  border-left: 1px dashed #c2c7ca;
+  border-left: 0.1em dashed #c2c7ca;
   padding-left: 0.5em;
   font-size: x-large;
   color: #4a555c;
@@ -135,7 +133,7 @@ article {
 
 nav {
   padding-top: 1em;
-  border-top: 1px solid #d8ddd8;
+  border-top: 0.1em solid #d8ddd8;
 }
 
 .head-title {
@@ -159,8 +157,7 @@ nav {
 }
 
 .flags-icons img {
-  width: 40px;
-  height: 20px;
+  height: 1.2em;
 }
 
 .flags-icons a:hover {
@@ -172,21 +169,21 @@ footer {
   text-align: center;
   font-style: italic;
   color: rgb(146, 146, 146);
-  margin-top: 20px;
+  margin-top: 2em;
 }
 
 .not-found {
   position: fixed;
   top: 50%;
   left: 50%;
-  margin-top: -50px;
-  margin-left: -100px;
+  margin-top: -5em;
+  margin-left: -10em;
 }
 
 @media only screen and (max-width: 520px) {
   nav>a {
     display: block;
-    padding: 5px;
+    padding: 2em;
   }
 
   header h1 {
