@@ -54,7 +54,7 @@ header h1 {
   margin: 0em;
 }
 
-header h2 {
+header .roles {
   margin: 0em;
   font-size: large;
   font-weight: 300;
@@ -138,12 +138,12 @@ article {
 nav {
   padding-top: 1em;
   border-top: 0.1em solid #d8ddd8;
+  margin-bottom: 2em;
 }
 
 .head-title {
-  margin-bottom: 1em;
-  margin-top: 1em;
   color: #2d3b44;
+  font-size: xx-large;
 }
 
 .image {
