@@ -54,6 +54,7 @@ header h1 {
 header h2 {
   margin: 0em;
   font-size: large;
+  font-weight: 300;
   padding-left: 0.2em;
   border-left: 0.05em dashed gray;
 }
@@ -183,7 +184,7 @@ footer {
 @media only screen and (max-width: 520px) {
   nav>a {
     display: block;
-    padding: 2em;
+    padding: 1em;
   }
 
   header h1 {
