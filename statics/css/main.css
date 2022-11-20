@@ -2,7 +2,10 @@ body {
   margin: 0 auto;
   max-width: 50em;
   font-family: "Helvetica", "Arial", sans-serif;
-  padding: 3em 2em;
+  padding-top: 3em;
+  padding-right: 0.3em;
+  padding-left: 0.3em;
+  padding-bottom: 3em;
   color: #555;
 }
 
