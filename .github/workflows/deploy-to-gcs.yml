@@ -19,10 +19,16 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
 
-    - uses: google-github-actions/setup-gcloud@v1
+    - id: 'auth'
+      uses: 'google-github-actions/auth@v1'
       with:
-        service_account_key: ${{ secrets.SA_KEY }}
-        project_id: ${{ secrets.PROJECT_ID }}
+        credentials_json: '${{ secrets.SA_KEY }}'
+
+    - name: 'Set up Cloud SDK'
+      uses: 'google-github-actions/setup-gcloud@v1'
+
+    - name: 'Use gcloud CLI'
+      run: 'gcloud info'
     
     - name: Deploy
       run: |-
