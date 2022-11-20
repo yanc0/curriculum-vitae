@@ -142,7 +142,7 @@ nav {
 }
 
 .head-title {
-  color: #2d3b44;
+  color: #003555;
   font-size: xx-large;
 }
 
@@ -215,6 +215,10 @@ footer {
   .article-image {
     max-height: 5em;
     max-width: 50%;
+  }
+
+  .head-title {
+    font-size: x-large;
   }
 }
 
